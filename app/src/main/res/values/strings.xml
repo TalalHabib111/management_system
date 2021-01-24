@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">employeeManagement</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="forgotpassword">ForgotPassword</string>
+</resources>
