@@ -55,7 +55,7 @@ button_login.setOnClickListener(new View.OnClickListener() {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-                            startActivity(new Intent(getApplicationContext(), EmployeeRecord.class));
+                            startActivity(new Intent(getApplicationContext(), Menu.class));
                         } else {
                             Toast.makeText(MainActivity.this, "Login Failed or user not available", Toast.LENGTH_SHORT).show();
                         }

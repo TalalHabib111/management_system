@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class EmployeeRecord extends AppCompatActivity {
 
-    EditText name, contact, dob;
+    EditText name, contact, department;
     Button btnInsert,btnUpdate,btnDelete,btnView;
     DBHelper db;
 
@@ -20,10 +20,11 @@ public class EmployeeRecord extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_record);
+        getSupportActionBar().setTitle("Employee Record");
 
         name = (EditText) findViewById(R.id.name);
         contact = (EditText) findViewById(R.id.contact);
-        dob = (EditText) findViewById(R.id.dob);
+        department = (EditText) findViewById(R.id.department);
         btnInsert = (Button) findViewById(R.id.btnInsert);
         btnUpdate = (Button) findViewById(R.id.btnUpdate);
         btnDelete = (Button) findViewById(R.id.btnDelete);
@@ -34,7 +35,7 @@ public class EmployeeRecord extends AppCompatActivity {
             public void onClick(View view) {
                 String nameText = name.getText().toString();
                 String contactText = contact.getText().toString();
-                String dobText = dob.getText().toString();
+                String dobText = department.getText().toString();
 
                 Boolean checkinsertdata = db.insertuserdata(nameText, contactText, dobText);
                 if (checkinsertdata == true)
@@ -51,7 +52,7 @@ public class EmployeeRecord extends AppCompatActivity {
             public void onClick(View view) {
                 String nameText = name.getText().toString();
                 String contactText = contact.getText().toString();
-                String dobText = dob.getText().toString();
+                String dobText = department.getText().toString();
 
                 Boolean checkupdatedata = db.updateuserdata(nameText, contactText, dobText);
                 if (checkupdatedata == true)
@@ -87,7 +88,7 @@ public class EmployeeRecord extends AppCompatActivity {
                 while (res.moveToNext()) {
                     buffer.append("Name: " + res.getString(0) + "\n");
                     buffer.append("Contact: " + res.getString(1) + "\n");
-                    buffer.append("Date of Birth: " + res.getString(2) + "\n\n");
+                    buffer.append("Department: " + res.getString(2) + "\n\n");
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(EmployeeRecord.this);
                 builder.setCancelable(true);

@@ -9,65 +9,122 @@
         android:id="@+id/textTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="please enter the details below"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"/>
+        android:text="EmployeeDetails"
+        android:textSize="25dp"
+        android:textColor="#00cba9"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/textDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the details below"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textTitle"
+        android:textColor="#00cba9"/>
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="Employee Name"
         android:textSize="20sp"
-        android:layout_below="@+id/textTitle"
+        android:layout_below="@+id/textDetail"
         android:inputType="textPersonName"/>
     <EditText
         android:id="@+id/contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ContactNumber"
+        android:hint="Contact Number"
         android:textSize="20sp"
         android:layout_below="@+id/name"
         android:inputType="number"/>
 
     <EditText
-        android:id="@+id/dob"
+        android:id="@+id/department"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Date Of Birth "
+        android:hint="Employee Department "
         android:textSize="20sp"
         android:layout_below="@+id/contact"
-        android:inputType="number"/>
+        android:inputType="text"/>
+
+
     <Button
         android:id="@+id/btnInsert"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Insert New Data"
+        android:layout_below="@+id/department"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="30dp"
-        android:layout_below="@+id/dob"/>
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="Insert New Data"
+        android:textSize="20sp"
+        app:backgroundTint="@color/colorPrimary" />
+
+
     <Button
         android:id="@+id/btnUpdate"
-        android:layout_width="match_parent"
+        android:layout_width="251dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_below="@+id/btnInsert"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="25dp"
+        android:paddingRight="30dp"
         android:text="Update Data"
-        android:layout_below="@+id/btnInsert"/>
+        android:textSize="20sp"
+        app:backgroundTint="@color/colorPrimary" />
+
     <Button
         android:id="@+id/btnDelete"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="DeleteData"
+        android:layout_below="@+id/btnUpdate"
 
-        android:layout_below="@+id/btnUpdate"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="DeleteData"
+        android:textSize="20sp"
+        app:backgroundTint="@color/colorPrimary" />
+
     <Button
         android:id="@+id/btnView"
-        android:layout_width="match_parent"
+        android:layout_width="247dp"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="View Data"
+        android:layout_below="@+id/btnDelete"
 
-        android:layout_below="@+id/btnDelete"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="View Data"
+        android:textSize="20sp"
+        app:backgroundTint="@color/colorPrimary" />
 
 
 </RelativeLayout>

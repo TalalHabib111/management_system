@@ -5,11 +5,16 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Login"
+        android:label="EMS"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeeManagement">
-        <activity android:name=".EmployeeRecord"></activity>
+        <activity
+            android:name=".bottomNav"
+            android:label="@string/title_activity_bottom_nav"></activity>
+        <activity android:name=".attendance" />
+        <activity android:name=".Menu" />
+        <activity android:name=".EmployeeRecord" />
         <activity android:name=".signup" />
         <activity android:name=".MainActivity">
             <intent-filter>
