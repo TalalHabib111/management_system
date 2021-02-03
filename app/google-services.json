@@ -7,6 +7,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:322057818577:android:3650f6c853f1a191f350f0",
+        "android_client_info": {
+          "package_name": "com.ems.employeemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322057818577-0f71d7lm06qovnd63jg81k937dlns949.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuYbkY1B2x29xyaQ7E1Do4oKKeXU0_IU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322057818577-0f71d7lm06qovnd63jg81k937dlns949.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:322057818577:android:067f70e13b7755cbf350f0",
         "android_client_info": {
           "package_name": "com.example.employeemanagement"

@@ -97,7 +97,6 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
-        app:passwordToggleEnabled="true"
         android:id="@+id/TextPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -116,7 +115,8 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextEmailAddress"/>
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailAddress"
+        app:passwordToggleEnabled="true" />
 
     <Button
         android:id="@+id/button_login"
@@ -132,8 +132,7 @@
         app:backgroundTint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextPassword"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
 
     <TextView
         android:id="@+id/forgetPassword"

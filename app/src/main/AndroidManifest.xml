@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.employeemanagement">
+    package="com.ems.employeemanagement">
 
     <application
         android:allowBackup="true"
@@ -9,21 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EmployeeManagement">
-        <activity android:name=".SplashScreen">
-
+        <activity android:name="com.ems.employeemanagement.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".attendance" />
-        <activity android:name=".Menu" />
-        <activity android:name=".EmployeeRecord" />
-        <activity android:name=".signup" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name="com.ems.employeemanagement.attendance" />
+        <activity android:name="com.ems.employeemanagement.Menu" />
+        <activity android:name="com.ems.employeemanagement.EmployeeRecord" />
+        <activity android:name="com.ems.employeemanagement.signup" />
+        <activity android:name="com.ems.employeemanagement.MainActivity" />
     </application>
 
 </manifest>
